@@ -22,8 +22,5 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-<<<<<<< HEAD
 .vercel
-=======
->>>>>>> f2d5575 (Initial commit)
 .env

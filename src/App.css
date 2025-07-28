@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @import "tailwindcss";
 
 .loader-container {
@@ -21,7 +20,3 @@
     animation: spin 2s linear infinite;
     margin-bottom: 20px;
 }
-
-=======
-@import "tailwindcss";
->>>>>>> f2d5575 (Initial commit)

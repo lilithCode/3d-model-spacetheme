@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import Loader from "./components/Loader";
@@ -69,46 +68,19 @@ function Scene() {
 
 function App() {
   return (
-    <BrowserRouter>
-      <NavigationProvider>
-        <Suspense fallback={<Loader />}>
-          <Routes>
-            <Route path="/" element={<Scene />} />
-            <Route path="/home" element={<Scene />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/projects" element={<Project />} />
-            <Route path="/skills" element={<Skills />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-        </Suspense>
-      </NavigationProvider>
-    </BrowserRouter>
+    <NavigationProvider>
+      <Suspense fallback={<Loader />}>
+        <Routes>
+          <Route path="/" element={<Scene />} />
+          <Route path="/home" element={<Scene />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Project />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </Suspense>
+    </NavigationProvider>
   );
 }
 
 export default App;
-=======
-import './App.css'
-import Home from './components/Home'
-import About from './components/About'
-import Project from './components/Projects'
-import Skills from './components/Skills'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
-
-function App() {
-
-  return (
-    <>
-      <Home />
-      <About />
-      <Project />
-      <Skills />
-      <Contact />
-      <Footer />
-    </>
-  )
-}
-
-export default App
->>>>>>> f2d5575 (Initial commit)

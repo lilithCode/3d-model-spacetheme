@@ -1,7 +1,6 @@
 import React from "react";
 import ParticleBackground from "./ParticleBackground";
 import avatar from "/avatar.png";
-import { motion } from "framer-motion";
 
 
 const About = () => {
